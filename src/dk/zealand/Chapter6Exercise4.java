@@ -1,6 +1,6 @@
 package dk.zealand;
 
-public class Chapter3Exercise4 {
+public class Chapter6Exercise4 {
 
     // Fra bogen https://books.trinket.io/thinkjava2/chapter6.html
     // Kapitel 6 ex 4
