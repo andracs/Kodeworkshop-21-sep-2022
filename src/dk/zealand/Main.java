@@ -7,7 +7,7 @@ public class Main {
     // Kapitel 6 ex 6
 
     public static void main(String[] args) {
-        String ord = "abcdex";
+        String ord = "adxempt";
         if (isAbecedarian(ord)) {
             System.out.println("Ordet er i abc-rækkefølge");
         }
@@ -26,12 +26,12 @@ public class Main {
         // XABCDE
         boolean erDetNuIRækkefølge = true;
         for (int i = 1; i < ord.length(); i++) {
-            System.out.println("Bogstav " + i + " er " + ord.charAt(i));
+            // System.out.println("Bogstav " + i + " er " + ord.charAt(i));
             if (ord.charAt(i)>=ord.charAt(i-1)) {
-                System.out.println("Denne bogstav er større end den forrige.");
+            //    System.out.println("Denne bogstav er større end den forrige.");
             }
             else {
-                System.out.println("Denne bogstav er ikke større.");
+            //    System.out.println("Denne bogstav er ikke større.");
                 erDetNuIRækkefølge = false;
             }
         }
