@@ -7,12 +7,12 @@ public class Main {
     // Kapitel 6 ex 6
 
     public static void main(String[] args) {
-        String ord = "adxempt";
+        String ord = "adddempt";
         if (isAbecedarian(ord)) {
-            System.out.println("Ordet er i abc-rækkefølge");
+            System.out.println("Ordet " + ord + "er i abc-rækkefølge");
         }
         else {
-            System.out.println("Ordet er ikke i abc-rækkefølge");
+            System.out.println("Ordet " + ord + " er ikke i abc-rækkefølge");
         }
     }
 
@@ -20,23 +20,10 @@ public class Main {
     // takes a String and
     // returns a boolean indicating whether the word is abecedarian.
     public static boolean isAbecedarian(String ord) {
-        // Pseudokode - algoritme almindelig ord
-        // giv dem tal i forhold til alfabetet
-        // gennemgå alle bogstaver
-        // XABCDE
-        boolean erDetNuIRækkefølge = true;
         for (int i = 1; i < ord.length(); i++) {
-            // System.out.println("Bogstav " + i + " er " + ord.charAt(i));
-            if (ord.charAt(i)>=ord.charAt(i-1)) {
-            //    System.out.println("Denne bogstav er større end den forrige.");
-            }
-            else {
-            //    System.out.println("Denne bogstav er ikke større.");
-                erDetNuIRækkefølge = false;
-            }
+            if (ord.charAt(i)<ord.charAt(i-1)) return false;
         }
-
-        return erDetNuIRækkefølge;
+        return true;
     }
 
 }
